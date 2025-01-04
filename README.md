@@ -68,8 +68,31 @@ dbt debug
 etapa 5 - carregar os dados do excel para o banco de dados:
 -obs: no desafio temos uma parte dos dados em um csv e precisamos carregar os dados do excel para o banco de dados, com o dbt basta adicioná-lo na pasta seeds e executar o comando
 ```bash
-dbt seerds
+dbt seed
 ```
 
+etapa 6 - estruturar as pastas e arquivos de transformação de dados dentro da pasta models:
 
 
+etapa 7 - executar os comandos do dbt: 
+```bash
+dbt run
+```
+após executar o comando dbt run verá que foi adicionado as viewas no banco de dados.
+
+etapa 8 - gerar documentação do dbt:
+
+1. adicionar "docs-paths: ["docs"]" dentro do dbt_project.yml;
+2. adicionar uma pasta chamada docs;
+3. adicionar um arquivo chamado homepage.md na pasta docs;
+4. executar o comando dbt docs generate:
+```bash
+dbt docs generate
+``` 
+
+5. executar o comando dbt docs serve:
+```bash
+dbt docs serve
+```
+6. acessar o site da documentação:
+será exibido o site da documentação. na porta exemplo http://localhost:8080/#!/overview
