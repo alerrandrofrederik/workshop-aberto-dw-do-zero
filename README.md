@@ -7,7 +7,7 @@ etapa 1 - criação das pastas
 etapa 2 - ativar ambiente virtual
 ```bash
 python -m venv .venv
-source .venv/bin/activate
+source .venv/scripts/activate
 ```
 
 etapa 3 - Instala as bibliotecas necessárias
@@ -55,6 +55,21 @@ datawarehouse: # Name your project!
       keepalives_idle: 0
 ```
 
+obs: Todos os comando do dbt são executados dentro do diretório do dbt.
+```bash
+cd datawarehouse 
+```
+
+etapa 4 - Verificar se a conexão entre o dbt e o banco de dados está ok:
+```bash
+dbt debug
+```
+
+etapa 5 - carregar os dados do excel para o banco de dados:
+-obs: no desafio temos uma parte dos dados em um csv e precisamos carregar os dados do excel para o banco de dados, com o dbt basta adicioná-lo na pasta seeds e executar o comando
+```bash
+dbt seerds
+```
 
 
 
