@@ -96,3 +96,38 @@ dbt docs serve
 ```
 6. acessar o site da documentação:
 será exibido o site da documentação. na porta exemplo http://localhost:8080/#!/overview
+
+O dashboard é implementado em Streamlit e permite visualizar os dados das commodities armazenados no Data Warehouse. Ele exibe tabelas e gráficos interativos para análise dos dados.
+
+## Gráficos Mermaid
+
+### Movimentação entre Sistemas
+
+```mermaid
+graph TD;
+    subgraph Extract_Load
+        A1[buscar_dados_commodities] --> B1[buscar_todos_dados_commodities]
+        B1 --> C1[carregar_dados_no_postgres]
+    end
+
+    subgraph Transform
+        D1[stg_commodities.sql] --> E1[stg_movimentacao_commodities.sql]
+        E1 --> F1[dm_commodities.sql]
+    end
+
+    A[API de Commodities] -->|Extrai Dados| Extract_Load
+    Extract_Load -->|Carrega Dados| C[PostgreSQL]
+    C -->|Armazena Dados| D[Data Warehouse]
+    Data_Warehouse -->|Transforma Dados| Transform
+    Transform -->|Cria Views| F[Dashboard Streamlit]
+```
+
+### Ideia de ETL
+
+```mermaid
+graph LR;
+    A[Extract] -->|Extrai Dados da API| B[Load]
+    B -->|Carrega Dados no DW| C[Transform]
+    C -->|Limpa e Transforma Dados| D[Data Warehouse]
+    D -->|Exibe Dados| E[Dashboard Streamlit]
+```
