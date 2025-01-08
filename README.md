@@ -131,3 +131,17 @@ graph LR;
     C -->|Limpa e Transforma Dados| D[Data Warehouse]
     D -->|Exibe Dados| E[Dashboard Streamlit]
 ```
+
+7. Instalar Bibliotecas streamlit:
+```bash
+pip install streamlit
+```
+
+8. Executar o dashboard que encontrasse no arquivo app.py na pasta app:
+```bash
+streamlit run app/app.py
+```
+
+9. Acessar o dashboard:
+http://localhost:8501/ 
+
