@@ -145,3 +145,9 @@ streamlit run app/app.py
 9. Acessar o dashboard:
 http://localhost:8501/ 
 
+Referecias:
+```bash
+https://github.com/lvgalvao/workshop-aberto-dw-do-zero
+https://github.com/lvgalvao/workshop-aberto-dw-do-zero-aovivo
+```
+
