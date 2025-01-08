@@ -132,7 +132,7 @@ graph LR;
     D -->|Exibe Dados| E[Dashboard Streamlit]
 ```
 
-7. Instalar Bibliotecas streamlit:
+7. Instalar Biblioteca streamlit:
 ```bash
 pip install streamlit
 ```
