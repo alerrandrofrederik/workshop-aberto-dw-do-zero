@@ -142,17 +142,17 @@ pip install streamlit
 streamlit run app/app.py
 ```
 
-9. Acessar o dashboard:
+9. Acessar o dashboard local:
 http://localhost:8501/ 
 
 10. Deploy o dashboard:
-[Link do Dashboard](https://learnstreamilt.streamlit.app/)
+[Link para acessar o Dashboard em produção](https://learnstreamilt.streamlit.app/)
 
 
 [link aula](https://jornadadedados.alpaclass.com/c/cursos/2X13Iw)
 
 
-Referecias:
+Referências:
 ```bash
 https://github.com/lvgalvao/workshop-aberto-dw-do-zero
 https://github.com/lvgalvao/workshop-aberto-dw-do-zero-aovivo
