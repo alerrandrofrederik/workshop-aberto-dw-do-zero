@@ -2,6 +2,16 @@
 
 ## Parte 1 - extracao e carregamento de dados
 
+### Ideia de ETL
+
+```mermaid
+graph LR;
+    A[Extract] -->|Extrai Dados da API| B[Load]
+    B -->|Carrega Dados no DW| C[Transform]
+    C -->|Limpa e Transforma Dados| D[Data Warehouse]
+    D -->|Exibe Dados| E[Dashboard Streamlit]
+```
+
 etapa 1 - criação das pastas
 
 etapa 2 - ativar ambiente virtual
@@ -122,15 +132,6 @@ graph TD;
     Transform -->|Cria Views| F[Dashboard Streamlit]
 ```
 
-### Ideia de ETL
-
-```mermaid
-graph LR;
-    A[Extract] -->|Extrai Dados da API| B[Load]
-    B -->|Carrega Dados no DW| C[Transform]
-    C -->|Limpa e Transforma Dados| D[Data Warehouse]
-    D -->|Exibe Dados| E[Dashboard Streamlit]
-```
 
 7. Instalar Biblioteca streamlit:
 ```bash
