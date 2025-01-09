@@ -146,9 +146,8 @@ streamlit run app/app.py
 http://localhost:8501/ 
 
 10. Deploy o dashboard:
-```bash 
-https://learnstreamilt.streamlit.app/
-```
+[Link do Dashboard](https://learnstreamilt.streamlit.app/)
+
 
 [link aula](https://jornadadedados.alpaclass.com/c/cursos/2X13Iw)
 
