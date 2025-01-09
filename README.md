@@ -145,9 +145,19 @@ streamlit run app/app.py
 9. Acessar o dashboard:
 http://localhost:8501/ 
 
+10. Deploy o dashboard:
+```bash 
+https://learnstreamilt.streamlit.app/
+```
+
+[link aula](https://jornadadedados.alpaclass.com/c/cursos/2X13Iw)
+
+
 Referecias:
 ```bash
 https://github.com/lvgalvao/workshop-aberto-dw-do-zero
 https://github.com/lvgalvao/workshop-aberto-dw-do-zero-aovivo
 ```
+
+
 
